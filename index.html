@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, h1, h2, p, button, input {
+          font-family: Kanit, sans-serif;
+          font-size: 15px;
+        }
+    </style>
+    <title>สำรวจการจัดเก็บของเสียจากเรือ</title>
+</head>
+<body>
+<main>
+    
+    
+    <div class="container">
+        <form method="post" accept-charset="UTF-8" autocomplete="off" name="Ship_Survey">
+        
+            <div class="box">
+                <label for="ชื่อเรือ">ชื่อเรือ</label>
+                <input class="input" type="text" name="ชื่อเรือ" required>
+            </div>
+                
+            <div class="box">
+                <label for="บริษัทตัวแทนเรือ">บริษัทตัวแทนเรือ</label>
+                <input class="input" placeholder="ชื่อบริษัท" list="ชื่อบริษัท" required autocomplete="off" id="บริษัทตัวแทนเรือ" name="บริษัทตัวแทนเรือ">
+                    <datalist id="ชื่อบริษัท">
+                        <option value="APL AGENCIES (THAILAND) CO. LTD.">
+                        <option value="CK LINE (THAILAND) CO ,LTD.">
+                        <option value="CMA CGM (THAILAND) LIMITED">
+                        <option value="COSCO SHIPPING LINES (THAILAND) CO.,LTD.">
+                        <option value="D&S CO., LTD. ">
+                        <option value="DONGJIN SHIPPING COMPANY LIMITED">
+                        <option value="EASTERN MARITIME (THAILAND) LTD">
+                        <option value="EVERGREEN SHIPPING AGENCY (THAILAND) CO., LTD.">
+                        <option value="GULF AGENCY COMPANY (THAILAND) LTD.">
+                        <option value="HEUNG-A SHIPPING (THAILAND) CO.,LTD.">
+                        <option value="HYUNDAI MERCHANT MARINE (THAILAND) CO.,LTD.">
+                        <option value="INTERASIA LINES (THAILAND)">
+                        <option value="ITL SERVICES AND LOGISTICS COMPANY LIMITED">
+                        <option value="J.SHIPPING SERVICES CO.,LTD.">
+                        <option value="JIANGSU OCEAN TCLC">
+                        <option value="K LINE (THAILAND) LTD.">
+                        <option value="KMTC LINE">
+                        <option value="MARINE CONNECTIONS CO.,LTD">
+                        
+                        <option value="NAM YUEN YONG SHIPPING CO.,LTD.">
+                        <option value="NGOW HOCK CO.,LTD.">
+                        <option value="OCEAN NETWORK EXPRESS (THAILAND) LTD.">
+                        <option value="OOCL (THAILAND) LTD.">
+                        <option value="PANAMAX LIMITED">
+                        <option value="PRIME SHIPPING CO.,LTD.">
+                        <option value="RCL FEEDER PTE LTD">
+                        <option value="S5 ASIA LIMITED">
+                        <option value="SAB AGENCIES & TRANSPORTCO.,LTD.">
+                        <option value="SAMUDERA SHIPPING LINE LTD.">
+                        <option value="SATA SHIPPING CO., LTD.">
+                        <option value="SEA - CHART SHIPPING (THAILAND) CO. LTD">
+                        <option value="SEA HORSE MARITIME CO.,LTD">
+                        <option value="SEALITE SHIPPING CO. LTD">
+                        <option value="SENG KIAT INTERNATIONAL LINES CO., LTD.">
+                        
+                        <option value="SIAM ECL CO., LTD.">
+                        <option value="SINN SIMON AGENCIE CO.,LTD">
+                        <option value="SINOKOR MERCHANT MARINE (THAILAND) CO.,LTD.">
+                        <option value="SITC CONTAINER LINES (THAILAND) CO.,LTD.">
+                        <option value="THAI COPEX INTERNATIONAL CO., LTD.">
+                        <option value="THAI PETRA TRANSPORT CO., LTD">
+                        <option value="THAI SHIPPING AGENCIES AND TRADING CO.,LTD.D">
+                        <option value="TRIPLE I MARITIME AGENCIES CO.,LTDD">
+                        <option value="TSL NAXCO (THAILAND) COMPANY LIMITED">
+                        <option value="WAN HAI LINES (THAILAND) LTD..">
+                        <option value="WONGSAMUT OCEAN SHIPPING CO.,LTD.">
+                        <option value="YANG MING LINE (THAILAND) CO., LTD.">
+                        <option value="ZIM (THAILAND ) CO.,LTD">
+                        <option value="ZIM INTEGRATED SHIPPING SERVICES LTD.">
+                    </datalist>
+            </div>
+
+            <div class="box">
+                <label for="ท่าเทียบเรือ">ท่าเทียบเรือ</label>
+                <input class="input" placeholder="ท่า" list="ท่า" required autocomplete="off" id="ท่าเทียบเรือ" name="ท่าเทียบเรือ">
+                <datalist id="ท่า">
+                    <option value="20A">
+                    <option value="20AB">
+                    <option value="20B">
+                    <option value="20C">
+                    <option value="20D">
+                    <option value="20E">
+                    <option value="20F">
+                    <option value="20G">
+                    <option value="22A">
+                    <option value="22B">
+                    <option value="22C">
+                    <option value="22D">
+                    <option value="22E">
+                    <option value="22F">
+                    <option value="22G">
+                    <option value="22H">
+                    <option value="22I">
+                    <option value="22J">
+                </datalist>
+            </div>
+                
+
+            <div class="box">
+                <label for="วันที่">วันที่สำรวจ</label>
+                <input class="input" type="date" id="วันที่" name="วันที่" required autocomplete="off">
+            </div>
+                
+
+            <div class="box">
+                <label for="เวลา">เวลาสำรวจ</label>
+                <input class="input" type="time" name="เวลา" required autocomplete="off">
+            </div>
+            <br>
+                
+
+           
+
+            <div class="survey-box">
+
+                <center><h1>ผลการสำรวจ</h1></center>
+                <div>
+                    <input class="input" placeholder="การตรงตามเวลานัดหมายของรถจัดเก็บของเสีย" list="ผลสำรวจ" required autocomplete="off" id="การตรงตามเวลานัดหมายของรถจัดเก็บของเสีย" name="การตรงตามเวลานัดหมายของรถจัดเก็บของเสีย">
+                    <datalist id="ผลสำรวจ">
+                        <option value="รถจัดเก็บของเสียมาตรงตามเวลา">
+                        <option value="รถจัดเก็บของเสียมาไม่ตรงตามเวลา">
+                    </datalist>
+                </div>           
+
+                
+                <div>
+                    <input class="input" placeholder="การตรงตามเวลานัดหมายของเรือ" list="ระยะเวลา" required autocomplete="off" id="การตรงตามเวลานัดหมายของเรือ" name="การตรงตามเวลานัดหมายของเรือ">
+                    <datalist id="ระยะเวลา">
+                        <option value="รถถ่ายเทของเสียจอดรอ <30 นาที">
+                        <option value="รถถ่ายเทของเสียจอดรอ >30 นาที">
+                    </datalist>
+                </div>
+                
+
+                <div>
+                    <input class="input" placeholder="การถ่ายเทของเสียลงจากเรือ" list="การถ่ายเท" required autocomplete="off" id="การถ่ายเทของเสียลงจากเรือ" name="การถ่ายเทของเสียลงจากเรือ">
+                    <datalist id="การถ่ายเท">
+                        <option value="พนักงานขึ้นไปบนเรือและโยนขยะลงจากเรือ">
+                        <option value="เรือใช้เครนยกตาข่ายขนย้ายขยะลงจากเรือ">
+                        <option value="เป็นไปตามวิธีปฏิบัติของ จท. (น้ำมัน)">
+                        <option value="ไม่เป็นไปตามวิธีปฏิบัติของ จท. (น้ำมัน)">
+                    </datalist>
+                </div>
+
+                <div>
+                    <input class="input" placeholder="การคัดแยกขยะของเรือ" list="ผล" required autocomplete="off" id="การคัดแยกขยะของเรือ" name="การคัดแยกขยะของเรือ">
+                    <datalist id="ผล">
+                        <option value="เรือมีการคัดแยกขยะ">
+                        <option value="เรือไม่มีการคัดแยกขยะ">
+                    </datalist>
+                </div>
+
+               
+                <div>
+                    <input class="input" placeholder="ปริมาณการทิ้งของเสีย" list="ปริมาณ" required autocomplete="off" id="ปริมาณการทิ้งของเสีย" name="ปริมาณการทิ้งของเสีย">
+                    <datalist id="ปริมาณ">
+                        <option value="ปริมาณของเสียตรงตามแบบแจ้งฯ">
+                        <option value="ปริมาณของเสียไม่ตรงตามแบบแจ้งฯ">
+                    </datalist>
+                </div>
+
+
+                <div>
+                    <input class="input" placeholder="การสวมใส่อุปกรณ์ PPE ของพนักงานจัดเก็บของเสีย" list="PPE" required autocomplete="off" id="การสวมใส่อุปกรณ์ PPE" name="การสวมใส่อุปกรณ์ PPE">
+                    <datalist id="PPE">
+                        <option value="สวมใส่อุปกรณ์ PPE ครบถ้วน">
+                        <option value="สวมใส่อุปกรณ์ PPE ไม่ครบถ้วน">
+                    </datalist>
+                </div>
+               
+            </div>  
+            <br>  
+
+            <button class="button" type="submit" name="submit" value="submit" style="font-size: large;" >Record</button>
+            <p id="demo"></p>
+        </form>
+    </div>
+</main>
+    
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyoHLuZw_70P3zvNOAbCKwoqospUCyeBW5E5ozEEJoUrHg2iML17WgdezIvtD9tBc6hVQ/exec'
+            const form = document.forms['Ship_Survey']
+            
+            form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b></b></div>",Ship_Survey.reset())
+                    .catch(error => console.error('Error!', error.message))
+                    Swal.fire({
+                     title: "บันทึกผลเรียบร้อย!",
+                        icon: "success"
+                    });
+                })
+    </script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>         
+</body>
+</html>
