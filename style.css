@@ -67,4 +67,9 @@ html {
     border-radius: 10px;
     padding: 20px;
     background-color: #cde7e3;
-}  
+    padding-top: 5px;
+} 
+h1{
+  font-size: 20px;
+  color: #119499;
+} 
